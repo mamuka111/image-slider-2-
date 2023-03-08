@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .image {
+    flex: 1;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image img {
+    max-height: 100%;
+    max-width: 100%;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .image.active {
+    flex: 3;
+  }
